@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/goburrow/serial"
+	"github.com/grid-x/serial"
 )
 
 // Server is a Modbus slave with allocated memory for discrete inputs, coils, etc.
