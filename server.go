@@ -54,7 +54,8 @@ func NewServer() *Server {
 	s.requestChan = make(chan *Request)
 	s.portsCloseChan = make(chan struct{})
 
-	go s.handler()
+	// ascii server does not use requestChan
+	//go s.handler()
 
 	return s
 }
